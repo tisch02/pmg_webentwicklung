@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Witze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Eine Sammlung an Witzen</h1>
+    <div class="border">
+        <p id="textField">Das ist ein Text</p>
+        <button onclick="btnClick()">Neu laden</button>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+
+    let textField = document.getElementById("textField")
+
+    function btnClick(){
+
+        fetch("https://witzapi.de/api/joke")
+            .then(response => response.json())
+            .then((data) => {
+                textField.innerText = data[0]["text"]
+        })
+
+    }
+
+    btnClick()
+
+</script>
