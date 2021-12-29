@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Name des Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Hier steht eine Überschrift</h1>
+    <div class="border">
+        <p id="textField">Das ist ein Text</p>
+        <button onclick="btnClick()">Button</button>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+
+    let textField = document.getElementById("textField")
+
+    function btnClick(){
+        textField.innerText = "Hallo Welt!"
+    }
+
+</script>
