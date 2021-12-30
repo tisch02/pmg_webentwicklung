@@ -1,0 +1,5 @@
+@startjson
+[{"text":"Witz-Text 1","language":"de"},
+{"text":"Witz-Text 2","language":"de"},
+{"text":"Witz-Text 3","language":"de"}]
+@endjson
